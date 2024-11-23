@@ -31,3 +31,19 @@ repos:
     hooks:
       - id: editorconfig-checker
         alias: ec
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: uv run -m ruff check --force-exclude
+        language: python
+        types_or: [python, pyi, jupyter]
+        args: [--fix]
+        require_serial: true
+      - id: ruff-format
+        name: ruff-format
+        entry: uv run -m ruff format --force-exclude
+        language: python
+        types_or: [python, pyi, jupyter]
+        args: []
+        require_serial: true
