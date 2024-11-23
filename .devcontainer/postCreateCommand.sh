@@ -9,3 +9,5 @@ sudo chown -R "$(whoami):" /home/vscode/.cache
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 uv sync
+
+uvx pre-commit install
