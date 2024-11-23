@@ -40,6 +40,7 @@
       "extensions": [
         "EditorConfig.EditorConfig",
         "VisualStudioExptTeam.vscodeintellicode",
+        "biomejs.biome",
         "ms-python.python"
       ]
     }
