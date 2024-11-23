@@ -14,3 +14,6 @@ wheels/
 
 # Ruff
 .ruff_cache/
+
+# Decoded zsh history
+.zsh_history*
