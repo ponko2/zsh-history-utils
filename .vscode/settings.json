@@ -1,9 +1,13 @@
 {
+  "biome.enabled": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "python.analysis.autoImportCompletions": true,
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
