@@ -10,3 +10,8 @@ dependencies = []
 dev = [
     "ruff>=0.9.6",
 ]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
