@@ -38,6 +38,7 @@
 
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
+        "EditorConfig.EditorConfig",
         "VisualStudioExptTeam.vscodeintellicode",
         "ms-python.python"
       ]
