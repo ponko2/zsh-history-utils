@@ -4,6 +4,7 @@
     "VisualStudioExptTeam.vscodeintellicode",
     "biomejs.biome",
     "charliermarsh.ruff",
+    "ms-python.mypy-type-checker",
     "ms-python.python",
     "ms-vscode-remote.vscode-remote-extensionpack"
   ]

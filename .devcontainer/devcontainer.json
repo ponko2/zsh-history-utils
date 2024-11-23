@@ -42,6 +42,7 @@
         "VisualStudioExptTeam.vscodeintellicode",
         "biomejs.biome",
         "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
         "ms-python.python"
       ]
     }
