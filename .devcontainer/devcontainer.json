@@ -41,6 +41,7 @@
         "EditorConfig.EditorConfig",
         "VisualStudioExptTeam.vscodeintellicode",
         "biomejs.biome",
+        "charliermarsh.ruff",
         "ms-python.python"
       ]
     }
