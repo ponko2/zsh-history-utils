@@ -8,8 +8,27 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+    "mypy>=1.15.0",
     "ruff>=0.11.0",
 ]
+
+[tool.mypy]
+
+# Platform configuration
+python_version = "3.13"
+
+# Untyped definitions and calls
+disallow_untyped_defs = false # see ruff flake8-annotations (ANN)
+disallow_incomplete_defs = false # see ruff flake8-annotations (ANN)
+
+# Configuring warnings
+warn_unused_ignores = true
+
+# Miscellaneous strictness flags
+strict = true
+
+# Miscellaneous
+warn_unused_configs = true
 
 [tool.ruff.format]
 preview = true

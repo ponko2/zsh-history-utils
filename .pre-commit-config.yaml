@@ -33,6 +33,13 @@ repos:
         alias: ec
   - repo: local
     hooks:
+      - id: mypy
+        name: mypy
+        entry: uv run -m mypy
+        language: system
+        types_or: [python, pyi]
+        args: [--scripts-are-modules]
+        require_serial: true
       - id: ruff
         name: ruff
         entry: uv run -m ruff check --force-exclude

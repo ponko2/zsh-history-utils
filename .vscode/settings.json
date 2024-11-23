@@ -3,6 +3,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "mypy-type-checker.importStrategy": "fromEnvironment",
   "python.analysis.autoImportCompletions": true,
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "[json][jsonc]": {
