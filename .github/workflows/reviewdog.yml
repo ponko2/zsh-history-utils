@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: reviewdog/action-yamllint@v1
+      - uses: reviewdog/action-yamllint@81e7f3cd56f50cf821aedc79b0ec169acf122532 # v1.20.2
         with:
           fail_level: error
           filter_mode: nofilter
