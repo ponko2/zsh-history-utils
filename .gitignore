@@ -17,3 +17,6 @@ wheels/
 
 # Decoded zsh history
 .zsh_history*
+
+# Node.js
+node_modules/
