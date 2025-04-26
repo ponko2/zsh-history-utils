@@ -35,3 +35,4 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
+    versioning-strategy: increase
