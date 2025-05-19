@@ -2,12 +2,14 @@
 extends: default
 rules:
   comments:
+    level: error
     min-spaces-from-content: 1
   comments-indentation: disable
   document-start:
     ignore: |
       .github/
       .pre-commit-config.yaml
+    level: error
   line-length: disable
   octal-values:
     forbid-implicit-octal: true
@@ -27,3 +29,4 @@ rules:
       - "no"
       - "on"
       - "off"
+    level: error
