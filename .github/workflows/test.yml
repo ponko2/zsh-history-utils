@@ -74,17 +74,17 @@ jobs:
               - ".github/workflows/*.{yaml,yml}"
             biome:
               - *common
-              - "**.{cjs,cts,js,json,jsonc,jsx,mjs,mts,ts,tsx}"
+              - "**/*.{cjs,cts,js,json,jsonc,jsx,mjs,mts,ts,tsx}"
               - biome.json
               - package-lock.json
               - package.json
             python:
               - *common
               - *dependencies
-              - "**.py"
+              - "**/*.py"
             yamllint:
               - *common
-              - "**.{yaml,yml}"
+              - "**/*.{yaml,yml}"
   actionlint:
     name: actionlint
     if: ${{ needs.changed-files.outputs.actions == 'true' }}
