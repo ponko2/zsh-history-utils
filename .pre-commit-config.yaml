@@ -14,10 +14,6 @@ repos:
     rev: v1.35.1
     hooks:
       - id: yamllint
-  - repo: https://github.com/biomejs/pre-commit
-    rev: v1.9.4
-    hooks:
-      - id: biome-ci
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v4.2.1
     hooks:
@@ -33,6 +29,12 @@ repos:
         alias: ec
   - repo: local
     hooks:
+      - id: biome
+        name: biome
+        entry: npx biome ci --files-ignore-unknown=true --no-errors-on-unmatched
+        language: system
+        types: [text]
+        files: \.(jsx?|tsx?|c(js|ts)|m(js|ts)|d\.(ts|cts|mts)|jsonc?|css|svelte|vue|astro|graphql|gql)$
       - id: mypy
         name: mypy
         entry: uv run -m mypy
