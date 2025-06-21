@@ -2,7 +2,7 @@
   "name": "zsh-history-utils",
   "version": "0.1.0",
   "devDependencies": {
-    "@biomejs/biome": "1.9.4"
+    "@biomejs/biome": "2.0.4"
   },
   "private": true,
   "scripts": {},
