@@ -46,6 +46,9 @@
       "automerge": false
     }
   ],
+  "pre-commit": {
+    "enabled": true
+  },
   "rangeStrategy": "bump",
   "schedule": ["* 0-4 * * *"],
   "timezone": "Asia/Tokyo"
