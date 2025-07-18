@@ -1,5 +1,5 @@
 {
-  "biome.enabled": true,
+  "biome.requireConfiguration": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
