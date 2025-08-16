@@ -27,6 +27,10 @@
   },
   "packageRules": [
     {
+      "matchDepTypes": ["requires-python"],
+      "rangeStrategy": "replace"
+    },
+    {
       "matchManagers": ["github-actions"],
       "minimumReleaseAge": "3 days",
       "addLabels": ["github_actions"],
