@@ -1,52 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices",
-    ":automergePatch",
-    ":disableRateLimiting",
-    ":gitSignOff",
-    ":semanticCommits",
-    "customManagers:biomeVersions"
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "managerFilePatterns": [
-        "/(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$/",
-        "/(^|/)action\\.ya?ml$/"
-      ],
-      "matchStrings": ["GHALINT_VERSION: (?<currentValue>.*?)\\n"],
-      "datasourceTemplate": "github-releases",
-      "packageNameTemplate": "suzuki-shunsuke/ghalint"
-    }
-  ],
-  "labels": ["dependencies"],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  },
-  "minimumReleaseAge": "3 days",
-  "packageRules": [
-    {
-      "matchDepTypes": ["requires-python"],
-      "rangeStrategy": "replace"
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "addLabels": ["github_actions"],
-      "automerge": false
-    },
-    {
-      "matchManagers": ["custom.regex"],
-      "matchPackageNames": ["suzuki-shunsuke/ghalint"],
-      "addLabels": ["github_actions"],
-      "automerge": false
-    }
-  ],
+  "extends": ["github>ponko2/renovate-config", "customManagers:biomeVersions"],
   "pre-commit": {
     "enabled": true
-  },
-  "rangeStrategy": "bump",
-  "schedule": ["* 0-4 * * *"],
-  "timezone": "Asia/Tokyo"
+  }
 }
