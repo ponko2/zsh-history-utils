@@ -25,6 +25,7 @@
     "enabled": true,
     "automerge": true
   },
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchDepTypes": ["requires-python"],
@@ -32,14 +33,12 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "minimumReleaseAge": "3 days",
       "addLabels": ["github_actions"],
       "automerge": false
     },
     {
       "matchManagers": ["custom.regex"],
       "matchPackageNames": ["suzuki-shunsuke/ghalint"],
-      "minimumReleaseAge": "3 days",
       "addLabels": ["github_actions"],
       "automerge": false
     }
