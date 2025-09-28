@@ -169,9 +169,10 @@ jobs:
       - name: Set up Python
         run: uv python install
       - name: Validate all commits from PR
-        run: >-
-          uvx --from commitizen
-          cz check --rev-range ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: uvx --from commitizen cz check --rev-range "${BASE_SHA}..${HEAD_SHA}"
   editorconfig:
     name: EditorConfig
     needs: verify-author
