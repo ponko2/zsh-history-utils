@@ -4,7 +4,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.2.5"
   },
-  "packageManager": "pnpm@10.18.1",
+  "packageManager": "pnpm@10.18.2",
   "private": true,
   "scripts": {},
   "type": "module"
